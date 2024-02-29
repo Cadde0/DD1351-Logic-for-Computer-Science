@@ -1,0 +1,20 @@
+[
+    [home, [bankid, request]],
+    [bankid, [bankid, history, payment, home]],
+    [history, [home, payment]],
+    [request, [payment]],
+    [payment, [bankid]]
+].
+
+[
+    [home, []],
+    [bankid, [true, false, cancelled]],
+    [history, [amount, number, sent, recieved]],
+    [request, [amount, number, sent, recieved]],
+    [payment, [amount, number]]
+].
+
+home.
+
+
+ex(amount).

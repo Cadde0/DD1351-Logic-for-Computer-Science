@@ -1,0 +1,15 @@
+
+[imp(p, imp(q, r))].
+imp(p, q).
+[
+    [1, imp(p, imp(q, r)), premise],
+    [
+        [2, p, assumption],
+        [3, imp(q, r), impelim(1, 2)]
+    ],
+    [
+        [4, p, assumption],
+        [5, q, impelim(1, 4)]
+],
+    [6, imp(p, q), impintro(4, 5)]
+].
